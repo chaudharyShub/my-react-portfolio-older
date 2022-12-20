@@ -1,0 +1,67 @@
+.about_main {
+    width: 80%;
+    margin: 5em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.about_main:hover {
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.paragraph {
+    width: 80%;
+    text-align: center;
+    padding: 2em 0;
+    line-height: 2rem;
+    text-shadow: .5px .5px yellowgreen;
+}
+
+.heading {
+    font-size: 3rem;
+    text-shadow: 1.5px 1.5px yellowgreen;
+    cursor: default;
+}
+
+.view_resume {
+    margin-bottom: 1.5em;
+    margin-top: -.5em;
+    font-weight: 400;
+    padding: 7px;
+    color: yellowgreen;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 7px;
+    transition: .15s ease;
+}
+
+.view_resume:hover {
+    border: 1px solid yellowgreen;
+    border-radius: 7px;
+}
+
+.download {
+    margin-bottom: 2em;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 5px 1rem;
+    color: black;
+    background-color: yellowgreen;
+    border-radius: 3px;
+    transition: .15s ease;
+}
+
+.download:hover {
+    box-shadow: 1.5px 1.5px 5px black;
+}
+
+@media only screen and (min-width: 700px) {
+    .about_main {
+        width: 600px;
+    }
+}

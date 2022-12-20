@@ -1,0 +1,114 @@
+.home_main {
+    width: 80%;
+    margin: 5em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.home_main:hover {
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.name {
+    margin-top: 2em;
+    cursor: default;
+}
+
+.name>h2 {
+    line-height: .5rem;
+    font-size: 3rem;
+    border-image: 10px;
+    margin-bottom: 1.5em;
+    text-shadow: 1.5px 1.5px yellowgreen;
+}
+
+.name span {
+    background-color: black;
+}
+
+.name h2:nth-child(3) {
+    color: grey;
+    text-shadow: 2px 2px yellowgreen;
+}
+
+.name h2:nth-child(4) {
+    color: grey;
+    text-shadow: 2px 2px yellowgreen;
+}
+
+.name_outer>img {
+    width: 15rem;
+    border-radius: 60%;
+    border: 2px solid yellowgreen;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.welcome {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px yellowgreen;
+    cursor: default;
+    animation: moveArrowY 1s alternate-reverse infinite;
+}
+
+.welcome:hover {
+    text-shadow: 1px 1px 0px yellowgreen;
+}
+
+.name h2:nth-child(3):hover,
+h2:nth-child(4):hover {
+    text-shadow: 1.5px 1.5px yellowgreen;
+}
+
+@keyframes moveArrowY {
+    from {
+        transform: translateY(-30px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .welcome {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 1.2rem;
+    }
+
+    .home_main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .home_main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .home_main>img {
+        margin: auto 0;
+        block-size: fit-content;
+    }
+
+    .welcome {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .home_main {
+        width: 900px;
+    }
+}
